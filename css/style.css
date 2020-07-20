@@ -1,0 +1,359 @@
+/* global class starts here */
+
+* {
+    scroll-behavior: smooth;
+    border: none;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url('../fonts/BalooDa2-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: myfontRegular;
+    src: url('../fonts/BalooDa2-Regular.ttf');
+}
+
+i {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: myfont !important;
+}
+
+p, a {
+    font-family: myfontRegular !important;
+}
+
+.mybtn {
+    background: #8A2387;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+    color: white;
+    border: none;
+}
+
+.sub-heading {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.text-bg {
+    background: linear-gradient(to left, #8a2387, #e94057, #f27121);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* global class ends here */
+
+
+/* header bg starts here */
+
+.header-bg {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('../images/alexandru-acea-XEB8y0nRRP4-unsplash.jpg');
+    background-size: cover;
+    background-position: fixed;
+    height: 85vh;
+}
+
+.header-bg p:first-child {
+    font-size: 2rem;
+}
+
+.header-bg h1 {
+    font-size: 8rem;
+}
+
+.header-bg .first {
+    font-size: 9rem;
+    background: linear-gradient(to left, #8a2387, #e94057, #f27121);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-bg .second {
+    margin-top: -100px;
+}
+
+/* header bg ends here */
+
+/* about us sectio starts here */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+.middle-section img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* about us sectio ends here */
+
+
+/* skill section starts here */
+
+.skill {
+    padding-top: 30px;
+}
+
+.skill .profession {
+    background: linear-gradient(to left, #8a2387, #e94057, #f27121);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill .skill-context {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* skill section ends here */
+
+/* contact section starts here */
+
+.contact-icon {
+    height: 70px;
+    width: 70px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 50%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.phone, .address, .email {
+	display: grid;
+	grid-template-columns: 25% 75%;
+}
+
+
+
+
+
+/* contact section ends here */
+
+
+/* service area starts here */
+
+.service-icon {
+    background: linear-gradient(to left, #8a2387, #e94057, #f27121);
+    height: 80px;
+    width: 80px;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    
+}
+
+/* service area ends here */
+
+
+/* testimonial section starts here */
+
+.testimonial {
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.testimonial img {
+    clip-path: circle(37% at 50% 45%);
+
+}
+.testimonial .top-quote {
+    font-size: 50px;
+    display: block;
+    margin-left: -35px;
+    margin-bottom: 35px;
+}
+
+.bottom-quote {
+    text-align: right;
+    display: block;
+    font-size: 50px;
+}
+
+.testimonial-context {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* testimonial section ends here */
+
+/* experience sections starts here */
+
+.experience span {
+    width: 5px;
+    height: 50px;
+    background: rgba(240, 234, 234, 0.5);
+    display: block;
+}
+
+/* experience sections ends here */
+
+/* blog section starts here */
+
+.blog .card-title {
+    word-break: break-all
+}
+
+
+/* contact section statrs here */
+
+.contact {
+    position: relative;
+}
+
+.map {
+    height: 95vh;
+}
+
+.myform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* contact section ends here */
+
+/* bootstrap styles edited here */
+.progress-bar {
+    font-size: 1rem;
+}
+
+/* responsive starts here */
+
+@media only screen and (max-width: 1155px){
+    .phone, .address, .email {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .card {
+        width: 14rem !important;
+    }
+
+    .row .card button {
+        display: block;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .about-grid .right-section {
+        display: none;
+    }
+
+    .phone, .address, .email {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .context {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .map {
+        height: 120vh;
+    }
+
+    .myform {
+        width: 80%;
+    }
+
+    .myform form {
+        width: 100% !important;
+    }
+
+    .card {
+        width: 10rem !important;
+    }
+
+    .blog .card-title {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 580px){
+    .testimonial .top-quote {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .card {
+        width: 20rem !important;
+        margin: 0 auto;
+    }
+
+    .experience {
+        text-align: center;
+    }
+
+    .experience span {
+        width: 50%;
+        height: 1px;
+        margin-bottom: 40px;
+    }
+
+    .experience .first-section {
+        text-align: center !important;
+    }
+
+    .experience span {
+        width: 50%;
+        height: 1px;
+        margin-bottom: 40px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 535px){
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 482px){
+    .about-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr .7fr   ;
+        position: unset
+    }
+
+
+
+    .about-grid .middle-section img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
